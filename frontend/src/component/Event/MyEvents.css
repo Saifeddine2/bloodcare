@@ -1,0 +1,84 @@
+.events {
+  padding: 100px 0;
+  color: #333;
+  background-image: url("/public/img/bgstock.png");
+  background-Size: "cover";
+  background-Position: "center";
+  background-Repeat: "no-repeat";
+
+}
+
+.content-wrapper {
+  padding: 20px;
+}
+
+.section-heading {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2em;
+  color: darkred;
+}
+
+.project-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.event-item {
+  padding: 20px;
+}
+
+.date {
+  background-color: rgba(0, 132, 139, 0.39);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.0em;
+}
+
+.date span {
+  font-size: 1.5em;
+}
+
+.h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.location {
+  padding: 5px 0;
+  font-size: 18px;
+}
+.dh{
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.my-events-link {
+  display: block;
+  background-color: darkred;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  max-height: 20%;
+}
+
+.my-events-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.my-events-link a:hover {
+  color: cornsilk;
+  background-color: #900;
+}
+
+.update-button {
+  text-align: center;
+  margin-top: 10px;
+}

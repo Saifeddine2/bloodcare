@@ -1,0 +1,466 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+div pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+figure,
+header,
+nav,
+section,
+article,
+aside,
+footer,
+figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* clear fix */
+.grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer,
+hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+ 
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000000;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+html,
+body {
+  font-family: "Poppins", sans-serif;
+ 
+}
+#contact form {
+  /* Arrondir les coins */
+  font-family: Arial, sans-serif; /* Changer la police d'écriture */
+  color: #000000;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: #fff;
+  border-radius: 23px;
+  text-align: center;
+}
+.btn-ferm  {
+  background-color: #a80707a5;
+  color: #fff;
+  border-radius: 12px;
+  width: 120px;
+}
+
+::selection {
+  background: #a80707a5;
+  color: #fff !important;
+}
+
+::-moz-selection {
+  background: #a80707a5;
+  color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
+}
+
+.page-section {
+  margin-top: 80px;
+}
+
+.section-heading {
+  position: relative;
+  z-index: 2;
+}
+H2 {
+  color: #a80707a5;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.section-heading h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #54A9B9;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-heading h4 {
+  color: #2a2a2a;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+
+.section-heading h4 em {
+  font-style: normal;
+  color: #a80707a5;
+}
+
+.section-heading .line-dec {
+  width: 50px;
+  height: 3px;
+  background-color: #54A9B9;
+}
+
+
+
+
+/* 
+---------------------------------------------
+contact
+--------------------------------------------- 
+*/
+
+.contact-us .section-heading .line-dec {
+  margin: 0 auto;
+}
+
+.contact-us .section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form#contact:before {
+  background-image: url(https://themewagon.github.io/digimedia/assets/images/contact-top-right-v2.png);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 626px;
+  height: 63px;
+  background-repeat: no-repeat;
+  content: "";
+  z-index: 1;
+}
+
+form#contact:after {
+  background-image: url(https://themewagon.github.io/digimedia/assets/images/contact-bottom-right-v2.png);
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 532px;
+  height: 0px;
+  background-repeat: no-repeat;
+  content: "";
+  z-index: 1;
+}
+
+form#contact #map iframe {
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+  position: relative;
+  z-index: 2;
+  padding: 40px 30px 20px 50px;
+}
+
+.fill-form {
+  padding: 40px 30px 20px 20px;
+}
+
+.contact-form {
+  background-color: #fffafa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us input,
+.contact-form textarea {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  border-radius: 23px;
+  margin-top: 15px;
+}
+
+form#contact select {
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #c2bfbfd7;
+  outline: none;
+  font-size: 15px;
+  font-weight: 300;
+  color: #353232;
+  padding: 0px 15px;
+  border-radius: 23px;
+  margin-top: 12px;
+}
+
+form#contact input::placeholder {
+  color: #aaa;
+}
+
+form#contact textarea::placeholder {
+  color: #aaa;
+}
+
+form#contact button {
+  display: inline-block;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 200;
+  color: #a80707a5;
+  margin-top: 10px;
+  width: 25%;
+
+  padding: 10px 23px;
+  border-radius: 23px;
+  letter-spacing: 0.25px;
+  border: 2px solid #a80707a5;
+  outline: none;
+}
+
+form#contact button:hover {
+  background-color: #a80707a5 !important;
+  color: #fff !important;
+}
+
+/* Ajoutez ce style à votre fichier CSS */
+.alert-item {
+  display: flex; /* Utilisez flexbox pour aligner les éléments horizontalement */
+  align-items: center; /* Centre verticalement les éléments enfants */
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--bs-white);
+  background-color: #54A9B9;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.05);
+}
+.alert-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 20px;
+  transition: 0.5s;
+  background-color: #a80707a5;
+}
+.container h4 {
+  color: #2a2a2a;
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+.container h4 em {
+  color: #a80707a5;
+}
+
+.alert-item:hover::before {
+  height: 100%;
+  top: 0;
+}
+.alert-item img {
+  width: 60px;
+  margin: 20px;
+}
+.alert-item button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  margin: 13px;
+}
+.alert-item button:hover {
+  background-color: #ffe100e4;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  margin: 13px;
+}
+.alert-item * {
+  position: relative;
+  transition: 0.5s;
+  z-index: 1;
+}
+.news-block-title p {
+  color: white;
+  font-size: 15px;
+}
+.news-block-date p {
+  color: white;
+  font-size: 15px;
+}
+
+.alert-item:hover h6,
+.alert-item:hover p {
+  color: var(--bs-white);
+}
+.container-service {
+  background-color: #7bb0b44e;
+  width: 670px;
+  border-radius: 10%;
+  margin-top: 10%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Couleur de l'arrière-plan de la barre de défilement */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#610d0d76; /* Couleur de la barre de défilement */
+  border-radius: 10px;
+   /* Rayon des coins de la barre de défilement */
+}
